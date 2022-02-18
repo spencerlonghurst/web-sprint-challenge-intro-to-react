@@ -13,7 +13,7 @@ const StyledP = styled.p `
     &: hover {
         color: black;
         text-shadow: none;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
 `
 
