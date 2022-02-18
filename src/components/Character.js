@@ -2,38 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const StyledName = styled.h2 `
-    &: hover {
-        color: white;
-        text-shadow: none;
-    }
-`
+// const StyledName = styled.h2 `
+//     &: hover {
+//         color: white;
+//         text-shadow: none;
+//     }
+// `
 
-const StyledP = styled.p `
-    &: hover {
-        color: black;
-        text-shadow: none;
-        // border: 1px solid green;
-    }
-`
+// const StyledP = styled.p `
+//     &: hover {
+//         color: black;
+//         text-shadow: none;
+//         // border: 1px solid green;
+//     }
+// `
 
 
 
-const Character = (props) => {
+export default function Character ({ character}) {
     return (
-        <>
-            {props.character.map(char => {
-                return (
-                    <div>
-                        <StyledName>Name: {char.name}</StyledName>
-                        <StyledP>Birth Year: {char.birth_year}</StyledP>
-                        <StyledP>Height: {char.height}</StyledP>
-                        <StyledP>Mass: {char.mass}</StyledP>
-                    </div>
-                )
-            })}
-        </>
+        <div>
+            <h2>Name: {character.name}</h2>
+        </div>
     )
 }
-
-export default Character;

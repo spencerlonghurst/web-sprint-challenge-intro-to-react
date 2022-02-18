@@ -4,9 +4,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
+// import { ThemeProvider } from 'styled-components';
+// import theme from './theme';
 
 import { worker } from "./mocks/browser";
 worker.start();
@@ -14,8 +13,8 @@ worker.start();
 
 
 ReactDOM.render(
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
         <App />
-    </ThemeProvider>
+    // </ThemeProvider>
 , 
 document.getElementById("root"));
